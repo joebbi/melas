@@ -1,0 +1,137 @@
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.linklist {
+	list-style: none;
+}
+
+ul.bulletlist
+{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.bulletlist li
+{
+    background-image: url(../img/mela_cross.png);
+    background-repeat: no-repeat;
+    background-position: 0px 3px;
+    padding-left: 26px;
+}
+
+.nav-tabs > li > a {
+    color: #ffffff;
+    background-color: #339900;
+    letter-spacing: 0.3em;
+}
+.nav-tabs > li > a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: #339900;
+}
+
+hr {
+    color: #339900;
+    background-color: #339900;
+    height: 1px;
+}
+
+.impressum {
+    color: darkgrey;
+    font-size: smaller;
+}
+
+.top-buffer {
+    margin-top:20px;
+}
+
+.top-neg-buffer {
+    margin-top:-15px;
+}
+
+#info {
+    display:none;
+}
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
+
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    /* width: 100%; */
+    border: 0;
+}
+
+.rslides_container {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+.rslides_nav {
+    position: absolute;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    top: 50%;
+    left: 0;
+    z-index: 99;
+    opacity: 0.2;
+    text-indent: -9999px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 61px;
+    width: 38px;
+    background: transparent url(../img/themes.gif) no-repeat left top;
+    margin-top: -45px;
+}
+
+.rslides_nav:active {
+    opacity: 0.7;
+}
+
+.rslides_nav.next {
+    left: auto;
+    background-position: right top;
+    right: 0;
+}

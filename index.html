@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="de">
+
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Rahmen und Schmuck</title>
+
+    <meta name="description" content="Rahmen + Schmuck - Ihr Fachgeschäft für Bildereinrahmungen und Schmuck in Witzhelden/ Leichlingen">
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/melas.css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+
+    <link href="facebox/facebox.css" rel="stylesheet">
+    <script type="text/javascript" src="facebox/facebox.js"></script>
+
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+            $('a[rel*=facebox]').facebox({
+                loadingImage : 'facebox/loading.gif',
+                closeImage   : 'facebox/closelabel.png'
+            });
+
+            if (!showHoliday())
+                $('#holiday').hide();
+        })
+
+    </script>
+
+    <script>
+        $(function () {
+            $('#myTab a:last').tab('show')
+        });
+
+        $(function () {
+            $(".slider").responsiveSlides(
+                    {
+                        auto: true,
+                        nav: false,
+                        fade: 500
+                    });
+        });
+
+
+     function showHoliday()
+     {
+        // bis 4.8.
+        var now = new Date();
+        return now.getDate() > 4 && now.getFullYear() == 2015 && now.getMonth() == 7;
+     }
+
+    </script>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="row">
+    <ul class="nav nav-tabs">
+        <li><a href="#start" data-toggle="tab" class="tab">Start</a></li>
+        <li><a href="#bildereinrahmung" data-toggle="tab" class="tab">Bildereinrahmung</a></li>
+        <li><a href="#schmuck" data-toggle="tab" class="tab">Schmuck</a></li>
+        <li><a href="#ubermich" data-toggle="tab" class="tab">Über mich</a></li>
+        <li><a href="#netzwerk" data-toggle="tab" class="tab">Netzwerk</a></li>
+    </ul>
+</div>
+
+<div class="row">
+    <div class="tab-content">
+
+        <div class="tab-pane active" id="start">
+
+            <div class="col-md-7">
+                <img src="img/melanie_vorne.jpg">
+            </div>
+
+            <div class="col-md-5">
+                <p>Sie suchen ein Fachgeschäft für Einrahmung oder einen neuen
+                    Spiegel für Ihr Firmenfoyer? Sie möchten handgefertigten Schmuck
+                    kaufen? In Ihrer Wohnung ist noch Platz für Kunst?</p>
+
+                <p>Besuchen Sie mein Fachgeschäft! Im Herzen von Witzhelden
+                    biete ich Ihnen neben hochwertigen Einrahmungen, Spiegeln und
+                    ausgewählter Kunst auch Unikatschmuck aus eigener Werkstatt an.
+                    Gestalterische Kreativität und Sorgfalt sind mir dabei oberstes
+                    Gebot.</p>
+
+                <p>Das Geschäft liegt im Zentrum von Witzhelden gegenüber dem
+                    Edeka-Supermarkt. Ein eigener Parkplatz vor dem Geschäft steht den
+                    Kunden zur Verfügung.</p>
+
+				<br>
+				<p>
+                	<img src="img/logo.png">
+            	</p>
+
+
+                <p>
+                    Solinger Strasse 18b<br>
+                    42799 Leichlingen/ Witzhelden<br>
+                    Tel. 02174-3070245 Fax. 02174-3076072<br>
+                    info@rahmenundschmuck.de</p>
+
+                <p>
+                    Öffnungszeiten<br>
+                    Di.-Fr. 10.00-13.00 und 15.00-18.30<br>
+                    Sa.10.00-13.00<br>
+                    Mo. Geschlossen
+                </p>
+
+                <div id="holiday">
+                    <p style="color: #339900; font-weight: bold">
+                        Am Dienstag, dem 4.8.2015 mache ich Urlaub, das Geschäft bleibt in der Zeit geschlossen.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-pane" id="bildereinrahmung">
+            <div class="col-md-7">
+                <div class="rslides_container">
+                    <ul class="slider">
+                        <li><img src="img/bildereinrahmungen/DSC_2741.jpg" alt=""></li>
+                        <li><img src="img/bildereinrahmungen/DSCF4651.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+
+                <p>
+                    Der richtige Rahmen unterstreicht den Wert und den Charakter eines Bildes. Ich bin sicher, für jedes
+                    Ihrer Bilder einen passenden Rahmen zu finden. Kommen Sie vorbei und lassen Sie sich überraschen,
+                    wie viele Möglichkeiten es heute gibt!
+                </p>
+
+                <ul class="bulletlist">
+                    <li>kompetente Beratung</li>
+                    <li>große Leistenauswahl</li>
+                    <li>konservierende Einrahmung</li>
+                    <li>Museumsgläser</li>
+                    <li>Sockel nach Maß</li>
+                    <li>Spiegel nach Maß</li>
+                    <li>Bilder</li>
+                    <li>Kunstausstellungen</li>
+                    <li>Aufhängesysteme</li>
+                    <li>Passe Partouts</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="tab-pane" id="schmuck">
+            <div class="col-md-7">
+                <div class="rslides_container">
+                    <ul class="slider">
+                        <li><img src="img/schmuck/_MG_6885.jpg" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9918_klein.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9922_klein.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9926_klein.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_2957x.jpg" alt=""></li>
+                        <li><img src="img/schmuck/IMG_2960x.jpg" alt=""></li>
+                        <li><img src="img/schmuck/IMG_2962x.jpg" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9931.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9932.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9934.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9935.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9936.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9937.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9940_klein.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9942.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9950_klein.lPG.JPG" alt=""></li>
+                        <li><img src="img/schmuck/IMG_99520_klein.JPG" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-5">
+                <p>Ich fertige Unikatschmuck nach eigenen Entwürfen in
+                    traditioneller Goldschmiedetechnik. Die verwendeten Materialien wie
+                    Gold, Silber, Edelsteine und Perlen sind Garant für dauerhafte
+                    Wertigkeit. Das Spektrum meiner Arbeiten reicht von streng bis
+                    elegant. Damit die Freude an Ihrem Schmuck erhalten
+                    bleibt, übernehme ich zudem Reparatur- und Pflegearbeiten.</p>
+                        
+                <ul class="bulletlist">
+                    <li>Trauringe</li>
+                    <li>Ringe</li>
+                    <li>Ketten</li>
+                    <li>Broschen</li>
+                    <li>Ohrschmuck</li>
+                    <li>Armbänder</li>
+                    <li>Anhänger</li>
+                    <li>Manschettenknöpfe</li>
+                </ul>
+
+                <br>
+
+                <p>Geschäftsethik: Edelmetalle und Edelsteine kaufe ich
+                    ausschließlich bei deutschen Unternehmen, die hohe Umwelt-und
+                    Arbeitsstandards in den Förderländern garantieren.
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="tab-pane" id="ubermich">
+
+            <div class="col-md-7">
+                <img src="img/_MG_4885.jpg">
+            </div>
+
+            <div class="col-md-5">
+                <p>Melanie Ebbighausen, Diplom der Edelmetallgestaltung und
+                    Bildhauerei an der Fachhochschule für Kunst + Design in Köln.
+                    Meisterschülerin von Peter Skubic. Mehr als 30 Jahre Erfahrung in
+                    der Schmuckgestaltung und Bildereinrahmung.</p>
+            </div>
+        </div>
+
+
+        <div class="tab-pane" id="netzwerk">
+
+            <div class="col-md-7">
+                <img src="img/_MG_4867.jpg">
+            </div>
+
+            <div class="col-md-5">
+
+                <p>
+                    Ich arbeite mit folgenden Lieferanten zusammen, die alle nach höchsten Qualitätsstandards
+                    zertifiziert sind:
+                </p>
+
+                <ul class="bulletlist">
+                    <li><a href="http://www.spagl-fachhandel.de">spagl</a></li>
+                    <li><a href="http://www.aicham-larsonjuhl.de">aicham-larsonjuhl</a></li>
+                    <li><a href="http://www.nielsen-design.de">nielsen-design</a></li>
+                    <li><a href="http://www.eurolijsten.be">www.eurolijsten.be</a></li>
+                    <li><a href="http://www.mittermeier-rahmen.de">mittermeier-rahmen</a></li>
+                    <li><a href="http://www.conzen.de/">F.G. Conzen</a></li>
+                    <li><a href="http://www.allgemeine-gold.de/">Allgemeine Gold- und Silberscheideanstalt</a></li>
+                    <li><a href="http://www.wieland-dental.de/">Wieland Dental Technik</a></li>
+                </ul>
+
+                <br>
+
+                <p>Künstler der Galerie</p>
+
+                <p>Folgende Künstlerinnen und Künstler arbeiten mit mir zusammen
+                    und haben in meinen Geschäftsräumen ausgestellt:</p>
+
+
+                <ul class="bulletlist">
+                    <li><a href="http://www.martina-duenwald.privat.t-online.de">Martina Dünwald</a></li>
+                    <li><a href="http://www.christa-feuerberg.de">Christa Feuerberg</a></li>
+                    <li>Melitta Reif</li>
+                    <li>Ulla Schellin</li>
+                    <li>Gottfried Schmitt</li>
+                    <li><a href="http://www.susanne-waltermann.de">Susanne Waltermann</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row top-buffer">
+    <div class="col-md-12">
+        <hr/>
+    </div>
+</div>
+
+<div id="info">
+    <h5>Rahmen + Schmuck</h5>
+    Melanie Ebbighausen<br>
+    Solinger Str. 18&thinsp;b<br>
+    <br>
+    42799 Leichlingen/ Witzhelden<br>
+    <br>
+    Tel. 02174 &ndash; 307&thinsp;02&thinsp;45<br>
+    Fax. 02174 &ndash; 307&thinsp;60&thinsp;72<br>
+    <br>
+    info@rahmenundschmuck.de<br>
+    <br>
+    USt.-Id Nr. DE 258518354
+</div>
+
+
+<div class="row top-neg-buffer">
+    <div class="col-md-11"></div>
+    <div class="col-md-1"><a href="#info" rel="facebox" class="impressum">Impressum</a></div>
+</div>
+
+</div>
+
+
+</body>
+</html>
