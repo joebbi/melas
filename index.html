@@ -14,7 +14,7 @@
 
     <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
+    <script type="text/javascriept" src="js/responsiveslides.min.js"></script>
 
     <link href="facebox/facebox.css" rel="stylesheet">
     <script type="text/javascript" src="facebox/facebox.js"></script>
@@ -51,8 +51,9 @@
      function showHoliday()
      {
         // bis 4.8.
-        var now = new Date();
-        return now.getDate() > 4 && now.getFullYear() == 2015 && now.getMonth() == 7;
+        //var now = new Date();
+		return false;
+        //return now.getDate() > 4 && now.getFullYear() == 2016 && now.getMonth() == 3;
      }
 
     </script>
@@ -70,6 +71,7 @@
         <li><a href="#start" data-toggle="tab" class="tab">Start</a></li>
         <li><a href="#bildereinrahmung" data-toggle="tab" class="tab">Bildereinrahmung</a></li>
         <li><a href="#schmuck" data-toggle="tab" class="tab">Schmuck</a></li>
+		<li><a href="#lokales" data-toggle="tab" class="tab">Lokales</a></li>
         <li><a href="#ubermich" data-toggle="tab" class="tab">Über mich</a></li>
         <li><a href="#netzwerk" data-toggle="tab" class="tab">Netzwerk</a></li>
     </ul>
@@ -120,7 +122,7 @@
 
                 <div id="holiday">
                     <p style="color: #339900; font-weight: bold">
-                        Am Dienstag, dem 4.8.2015 mache ich Urlaub, das Geschäft bleibt in der Zeit geschlossen.
+                        An Weiberfastnacht (4.2.2016) ist mein Geschäft geschlossen. Alaaf! Alaaf! Alaaf!
                     </p>
                 </div>
 
@@ -165,23 +167,20 @@
             <div class="col-md-7">
                 <div class="rslides_container">
                     <ul class="slider">
-                        <li><img src="img/schmuck/_MG_6885.jpg" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9918_klein.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9922_klein.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9926_klein.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_2957x.jpg" alt=""></li>
-                        <li><img src="img/schmuck/IMG_2960x.jpg" alt=""></li>
-                        <li><img src="img/schmuck/IMG_2962x.jpg" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9931.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9932.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9934.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9935.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9936.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9937.JPG" alt=""></li>
+						<li><img src="img/schmuck/_MG_6885.jpg" alt=""></li>
+                        <li><img src="img/schmuck/IMG_9918_klein.JPG" alt=""></li> 
                         <li><img src="img/schmuck/IMG_9940_klein.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9942.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9950_klein.lPG.JPG" alt=""></li>
-                        <li><img src="img/schmuck/IMG_99520_klein.JPG" alt=""></li>
+						<li><img src="img/schmuck/IMG_3562_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3628_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3666_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3795_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3740_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3753_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3633_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3747_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3571_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3665_b.jpg" alt=""></li>
+						<li><img src="img/schmuck/IMG_3438_b.jpg" alt=""></li>
                     </ul>
                 </div>
             </div>
@@ -214,7 +213,25 @@
             </div>
 
         </div>
+		
+		 <div class="tab-pane" id="lokales">
 
+            <div class="col-md-7">
+                <img src="img/schmuck/kirche.jpg" alt="Bild Anhänger">
+            </div>
+
+            <div class="col-md-5">
+                <p>Spendenaktion für den Kirchbauverein Witzhelden e.V. &quot;der Alte vom Berg&quot;.
+				</p>
+				
+				<p>Mit dem Erwerb dieses handgefertigten Silberanhängers &quot;der Alte vom Berg&quot; können Sie bei der Renovierung unseres Witzheldener Wahrzeichens helfen. Bisher konnte ich durch Ihre freundliche Unterstützung schon über 2000.- € an den Kirchbauverein überweisen!
+Herzlichen Dank dafür.
+				</p>
+
+				<p>Jedes Schmuckstück ist mit einer eigenen Nummer versehen und wird als Sticker oder Kettenanhänger exclusiv für den Kirchbauverein gefertigt. Die Kosten belaufen sich auf 70.- € (incl. Verpackung, Zertifikat und einer Spende von 20.- € für den Kirchbauverein).
+				</p>
+            </div>
+        </div>
 
         <div class="tab-pane" id="ubermich">
 
