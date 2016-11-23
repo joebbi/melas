@@ -7,38 +7,33 @@
 
     <title>Rahmen und Schmuck</title>
 
-    <meta name="description" content="Rahmen + Schmuck - Ihr Fachgeschäft für Bildereinrahmungen und Schmuck in Witzhelden/ Leichlingen">
+    <meta name="description"
+          content="Rahmen + Schmuck - Ihr Fachgeschäft für Bildereinrahmungen und Schmuck in Witzhelden/ Leichlingen">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
     <link href="css/melas.css" rel="stylesheet">
 
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascriept" src="js/responsiveslides.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script> -->
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- <script type="text/javascript" src="js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript" src="js/responsiveslides.min.js"></script>
 
     <link href="facebox/facebox.css" rel="stylesheet">
     <script type="text/javascript" src="facebox/facebox.js"></script>
 
-    <script type="text/javascript">
-
-        $(document).ready(function() {
-            $('a[rel*=facebox]').facebox({
-                loadingImage : 'facebox/loading.gif',
-                closeImage   : 'facebox/closelabel.png'
-            });
-
-            if (!showHoliday())
-                $('#holiday').hide();
-        })
-
-    </script>
-
     <script>
-        jQuery(function () {
-            $('#myTab a:last').tab('show')
-        });
+        $(function () {
+            $('#myTab a:last').tab('show');
 
-        jQuery(function () {
             $(".slider").responsiveSlides(
                     {
                         auto: true,
@@ -48,13 +43,19 @@
         });
 
 
-     function showHoliday()
-     {
-		return true;
-     }
-
     </script>
 
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+            jQuery('a[rel*=facebox]').facebox({
+                loadingImage: 'facebox/loading.gif',
+                closeImage: 'facebox/closelabel.png'
+            });
+        })
+
+    </script>
 
 
 </head>
@@ -66,227 +67,403 @@
 <div class="row">
     <ul class="nav nav-tabs">
         <li><a href="#start" data-toggle="tab" class="tab">Start</a></li>
+        <li><a href="#boule" data-toggle="tab" class="tab">Boule</a></li>
         <li><a href="#bildereinrahmung" data-toggle="tab" class="tab">Bildereinrahmung</a></li>
         <li><a href="#schmuck" data-toggle="tab" class="tab">Schmuck</a></li>
-		<li><a href="#lokales" data-toggle="tab" class="tab">Lokales</a></li>
+        <li><a href="#lokales" data-toggle="tab" class="tab">Lokales</a></li>
         <li><a href="#ubermich" data-toggle="tab" class="tab">Über mich</a></li>
         <li><a href="#netzwerk" data-toggle="tab" class="tab">Netzwerk</a></li>
     </ul>
 </div>
 
 <div class="row">
-    <div class="tab-content">
+<div class="tab-content">
 
-        <div class="tab-pane active" id="start">
+<div class="tab-pane active" id="start">
 
-            <div class="col-md-7">
-                <img src="img/melanie_vorne.jpg">
+    <div class="col-md-7">
+        <img src="img/melanie_vorne.jpg">
+    </div>
+
+    <div class="col-md-5">
+        <p>Sie suchen ein Fachgeschäft für Einrahmung oder einen neuen
+            Spiegel für Ihr Firmenfoyer? Sie möchten handgefertigten Schmuck
+            kaufen? In Ihrer Wohnung ist noch Platz für Kunst?</p>
+
+        <p>Besuchen Sie mein Fachgeschäft! Im Herzen von Witzhelden
+            biete ich Ihnen neben hochwertigen Einrahmungen, Spiegeln und
+            ausgewählter Kunst auch Unikatschmuck aus eigener Werkstatt an.
+            Gestalterische Kreativität und Sorgfalt sind mir dabei oberstes
+            Gebot.</p>
+
+        <p>Das Geschäft liegt im Zentrum von Witzhelden gegenüber dem
+            Edeka-Supermarkt. Ein eigener Parkplatz vor dem Geschäft steht den
+            Kunden zur Verfügung.</p>
+
+        <br>
+
+        <p>
+            <img src="img/logo.png">
+        </p>
+
+
+        <p>
+            Solinger Strasse 18b<br>
+            42799 Leichlingen/ Witzhelden<br>
+            Tel. 02174-3070245 Fax. 02174-3076072<br>
+            info@rahmenundschmuck.de</p>
+
+        <p>
+            Öffnungszeiten<br>
+            Di.-Fr. 10.00-13.00 und 15.00-18.30<br>
+            Sa.10.00-13.00<br>
+            Mo. Geschlossen
+        </p>
+
+
+        <!-- <div id="holiday">
+            <p style="color: #339900; font-weight: bold">
+                Vom 18.6. bis 4.7. mache ich Urlaub und mein Geschäft bleibt geschlossen.
+            </p>
+        </div> -->
+
+    </div>
+</div>
+
+
+<div class="tab-pane" id="boule">
+    <div class="row">
+        <div class="col-md-6 boule-img">
+            <img src="img/boule/kette.jpg" alt="Boulekette"/>
+        </div>
+        <div class="col-md-6">
+
+            <div class="row col-md-12">
+                <h4>Kette-boule-bubbles</h4>
+
+                <p>bestehend aus einer Silberkugel mit Aufhänger, einem Schmuck-Cochonnet in der Farbe Ihrer Wahl und
+                    einem Kautschuk-Halsband mit Silberverschluss. Alles poppig verpackt in einer farbigen
+                    Papierschatulle.</p>
             </div>
 
-            <div class="col-md-5">
-                <p>Sie suchen ein Fachgeschäft für Einrahmung oder einen neuen
-                    Spiegel für Ihr Firmenfoyer? Sie möchten handgefertigten Schmuck
-                    kaufen? In Ihrer Wohnung ist noch Platz für Kunst?</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <b>Boule</b><br>
 
-                <p>Besuchen Sie mein Fachgeschäft! Im Herzen von Witzhelden
-                    biete ich Ihnen neben hochwertigen Einrahmungen, Spiegeln und
-                    ausgewählter Kunst auch Unikatschmuck aus eigener Werkstatt an.
-                    Gestalterische Kreativität und Sorgfalt sind mir dabei oberstes
-                    Gebot.</p>
+                    <div class="boule-italic">
+                        Material: Silber 925 Sterling<br>
+                        Silberkugel in silber oder<br>
+                        Silber geschwärzt<br>
+                        Durchmesser: 1,7 cm<br>
+                        Gewicht: 5,5 Gramm<br>
+                    </div>
 
-                <p>Das Geschäft liegt im Zentrum von Witzhelden gegenüber dem
-                    Edeka-Supermarkt. Ein eigener Parkplatz vor dem Geschäft steht den
-                    Kunden zur Verfügung.</p>
+                    <b>Kautschukband</b><br>
 
-				<br>
-				<p>
-                	<img src="img/logo.png">
-            	</p>
-
-
-                <p>
-                    Solinger Strasse 18b<br>
-                    42799 Leichlingen/ Witzhelden<br>
-                    Tel. 02174-3070245 Fax. 02174-3076072<br>
-                    info@rahmenundschmuck.de</p>
-
-                <p>
-                    Öffnungszeiten<br>
-                    Di.-Fr. 10.00-13.00 und 15.00-18.30<br>
-                    Sa.10.00-13.00<br>
-                    Mo. Geschlossen
-                </p>
-
-                <div id="holiday">
-                    <p style="color: #339900; font-weight: bold">
-                        Am 14.05.2016 und 17.05.2016 ist mein Geschäft geschlossen.
-                    </p>
+                    <div class="boule-italic">
+                        3 mm Kautschukkette<br>
+                        mit Verschluss in<br>
+                        925 Sterlingsilber<br>
+                        Länge: 45 cm
+                    </div>
                 </div>
 
-            </div>
-        </div>
+                <div class="col-md-6">
+                    <b>Cochonnet</b><br>
 
-        <div class="tab-pane" id="bildereinrahmung">
-            <div class="col-md-7">
-                <div class="rslides_container">
-                    <ul class="slider">
-                        <li><img src="img/bildereinrahmungen/DSC_2741.jpg" alt=""></li>
-                        <li><img src="img/bildereinrahmungen/DSCF4651.jpg"></li>
-                    </ul>
+                    <div class="boule-italic">
+                        Durchmesser: ca. 6 mm<br>
+                        6 Farben wählbar:<br>
+                        blau: Achat<br>
+                        schwarz: Achat<br>
+                        rot: Achat<br>
+                        grün: Achat<br>
+                        weiss: Süsswasserperle<br>
+                        gelb: Tigerauge
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-8">
+                    <h5>Preis: 98,00 Euro inkl. 19% MwSt.<br>
+                        Versandkosten für eine Sendung: 7.- Euro</h5>
+                </div>
+                <div class="col-md-4">
+                    <a type="button" href="#orderinfo" rel="facebox" class="btn btn-default">Bestellinformationen</a>
                 </div>
             </div>
 
-            <div class="col-md-5">
-
-                <p>
-                    Der richtige Rahmen unterstreicht den Wert und den Charakter eines Bildes. Ich bin sicher, für jedes
-                    Ihrer Bilder einen passenden Rahmen zu finden. Kommen Sie vorbei und lassen Sie sich überraschen,
-                    wie viele Möglichkeiten es heute gibt!
-                </p>
-
-                <ul class="bulletlist">
-                    <li>kompetente Beratung</li>
-                    <li>große Leistenauswahl</li>
-                    <li>konservierende Einrahmung</li>
-                    <li>Museumsgläser</li>
-                    <li>Sockel nach Maß</li>
-                    <li>Spiegel nach Maß</li>
-                    <li>Bilder</li>
-                    <li>Kunstausstellungen</li>
-                    <li>Aufhängesysteme</li>
-                    <li>Passe Partouts</li>
-                </ul>
-            </div>
         </div>
+    </div>
 
+    <div class="row">
+        <div class="col-md-6 boule-img">
+            <img src="img/boule/armband.jpg" alt="Boulekette"/>
+            <img src="img/boule/bunte.jpg" alt="Boulekette" style="width: 100%"/>
+        </div>
+        <div class="col-md-6 boule-info">
 
-        <div class="tab-pane" id="schmuck">
-            <div class="col-md-7">
-                <div class="rslides_container">
-                    <ul class="slider">
-						<li><img src="img/schmuck/_MG_6885.jpg" alt=""></li>
-                        <li><img src="img/schmuck/IMG_9918_klein.JPG" alt=""></li> 
-                        <li><img src="img/schmuck/IMG_9940_klein.JPG" alt=""></li>
-						<li><img src="img/schmuck/IMG_3562_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3666_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3795_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3740_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3753_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3633_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3747_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3571_b.jpg" alt=""></li>
-						<li><img src="img/schmuck/IMG_3438_b.jpg" alt=""></li>
-                    </ul>
+            <div class="row col-md-12 ">
+                <h4>Armband-boule-bubbles</h4>
+
+                <p>bestehend aus je zwei gebohrten Silberkugeln in den Farben silber und schwarz, einem
+                    Schmuck-Cochonnet in der Farbe Ihrer Wahl und einem Kautschuk-Armband mit Silberverschluss. Alles
+                    poppig verpackt in einer farbigen Papierschatulle.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <b>Boule</b><br>
+
+                    <div class="boule-italic">
+                        2 Silberkugeln in silber<br>
+                        und Silber geschwärzt<br>
+                        Material: Silber 925 Sterling<br>
+                        Durchmesser: 1,4 cm<br>
+                        Gewicht: 1,9 Gramm je Kugel<br>
+                    </div>
+
+                    <b>Kautschukband</b><br>
+
+                    <div class="boule-italic">
+                        3 mm Kautschukkette<br>
+                        mit Verschluss in<br>
+                        925 Sterlingsilber<br>
+                        In drei verschiedenen Längen bestellbar (18, 21 oder 23 cm)
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <b>Cochonnet</b><br>
+
+                    <div class="boule-italic">
+                        Durchmesser: ca. 6 mm<br>
+                        6 Farben wählbar:<br>
+                        blau: Achat<br>
+                        schwarz: Achat<br>
+                        rot: Achat<br>
+                        grün: Achat<br>
+                        weiss: Süsswasserperle<br>
+                        gelb: Tigerauge
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-5">
-                <p>Ich fertige Unikatschmuck nach eigenen Entwürfen in
-                    traditioneller Goldschmiedetechnik. Die verwendeten Materialien wie
-                    Gold, Silber, Edelsteine und Perlen sind Garant für dauerhafte
-                    Wertigkeit. Das Spektrum meiner Arbeiten reicht von streng bis
-                    elegant. Damit die Freude an Ihrem Schmuck erhalten
-                    bleibt, übernehme ich zudem Reparatur- und Pflegearbeiten.</p>
-                        
-                <ul class="bulletlist">
-                    <li>Trauringe</li>
-                    <li>Ringe</li>
-                    <li>Ketten</li>
-                    <li>Broschen</li>
-                    <li>Ohrschmuck</li>
-                    <li>Armbänder</li>
-                    <li>Anhänger</li>
-                    <li>Manschettenknöpfe</li>
-                </ul>
-
-                <br>
-
-                <p>Geschäftsethik: Edelmetalle und Edelsteine kaufe ich
-                    ausschließlich bei deutschen Unternehmen, die hohe Umwelt-und
-                    Arbeitsstandards in den Förderländern garantieren.
-                </p>
-            </div>
-
-        </div>
-		
-		 <div class="tab-pane" id="lokales">
-
-            <div class="col-md-7">
-                <img src="img/schmuck/kirche.jpg" alt="Bild Anhänger">
-            </div>
-
-            <div class="col-md-5">
-                <p>Spendenaktion für den Kirchbauverein Witzhelden e.V. &quot;der Alte vom Berg&quot;.
-				</p>
-				
-				<p>Mit dem Erwerb dieses handgefertigten Silberanhängers &quot;der Alte vom Berg&quot; können Sie bei der Renovierung unseres Witzheldener Wahrzeichens helfen. Bisher konnte ich durch Ihre freundliche Unterstützung schon über 2000.- € an den Kirchbauverein überweisen!
-Herzlichen Dank dafür.
-				</p>
-
-				<p>Jedes Schmuckstück ist mit einer eigenen Nummer versehen und wird als Sticker oder Kettenanhänger exclusiv für den Kirchbauverein gefertigt. Die Kosten belaufen sich auf 70.- € (incl. Verpackung, Zertifikat und einer Spende von 20.- € für den Kirchbauverein).
-				</p>
-            </div>
-        </div>
-
-        <div class="tab-pane" id="ubermich">
-
-            <div class="col-md-7">
-                <img src="img/_MG_4885.jpg">
-            </div>
-
-            <div class="col-md-5">
-                <p>Melanie Ebbighausen, Diplom der Edelmetallgestaltung und
-                    Bildhauerei an der Fachhochschule für Kunst + Design in Köln.
-                    Meisterschülerin von Peter Skubic. Mehr als 30 Jahre Erfahrung in
-                    der Schmuckgestaltung und Bildereinrahmung.</p>
-            </div>
-        </div>
-
-
-        <div class="tab-pane" id="netzwerk">
-
-            <div class="col-md-7">
-                <img src="img/_MG_4867.jpg">
-            </div>
-
-            <div class="col-md-5">
-
-                <p>
-                    Ich arbeite mit folgenden Lieferanten zusammen, die alle nach höchsten Qualitätsstandards
-                    zertifiziert sind:
-                </p>
-
-                <ul class="bulletlist">
-                    <li><a href="http://www.spagl-fachhandel.de">spagl</a></li>
-                    <li><a href="http://www.aicham-larsonjuhl.de">aicham-larsonjuhl</a></li>
-                    <li><a href="http://www.nielsen-design.de">nielsen-design</a></li>
-                    <li><a href="http://www.eurolijsten.be">www.eurolijsten.be</a></li>
-                    <li><a href="http://www.mittermeier-rahmen.de">mittermeier-rahmen</a></li>
-                    <li><a href="http://www.conzen.de/">F.G. Conzen</a></li>
-                    <li><a href="http://www.allgemeine-gold.de/">Allgemeine Gold- und Silberscheideanstalt</a></li>
-                    <li><a href="http://www.wieland-dental.de/">Wieland Dental Technik</a></li>
-                </ul>
-
-                <br>
-
-                <p>Künstler der Galerie</p>
-
-                <p>Folgende Künstlerinnen und Künstler arbeiten mit mir zusammen
-                    und haben in meinen Geschäftsräumen ausgestellt:</p>
-
-
-                <ul class="bulletlist">
-                    <li><a href="http://www.martina-duenwald.privat.t-online.de">Martina Dünwald</a></li>
-                    <li><a href="http://www.christa-feuerberg.de">Christa Feuerberg</a></li>
-                    <li>Melitta Reif</li>
-                    <li>Ulla Schellin</li>
-                    <li>Gottfried Schmitt</li>
-                    <li><a href="http://www.susanne-waltermann.de">Susanne Waltermann</a></li>
-                </ul>
-
+            <div class="row" style="margin-top: 10px">
+                <div class="col-md-8">
+                    <h5>Preis: 98,00 Euro inkl. 19% MwSt.<br>
+                        Versandkosten für eine Sendung: 7.- Euro</h5>
+                </div>
+                <div class="col-md-4">
+                    <a type="button" href="#orderinfo" rel="facebox" class="btn btn-default">Bestellinformationen</a>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-6 boule-img">
+            <img src="img/boule/kombi.jpg" alt="Boulekette"/>
+        </div>
+        <div class="col-md-6 boule-info">
+
+            <div class="row col-md-12 ">
+                <h4>Kombinierbar</h4>
+
+                <p>Sie stellen Ihre individuelle Armband- und Kettenkollektion zusammen. Es sind zwei verschiedenfarbige
+                    Silberkugeln und sechs verschiedenfarbige Cochonnets möglich.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-md-6 boule-img">
+            <img src="img/boule/verpackung.jpg" alt="Boulekette"/>
+        </div>
+
+        <div class="col-md-6 boule-info">
+            <div class="row col-md-12 ">
+                <h4>Verpackung</h4>
+
+                <p>Jedes Schmuckstück ist verpackt in einer Papierschatulle. Die Farben stimmen hierbei nicht mit den
+                    farbigen Cochonnets überein.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- <img src="img/boule/armband.jpg" alt="Boulekette" />
+        <img src="img/boule/kombi.jpg" alt="Boulekette" />
+        <img src="img/boule/verpackung.jpg" alt="Boulekette" /> -->
+</div>
+
+<div class="tab-pane" id="bildereinrahmung">
+    <div class="col-md-7">
+        <div class="rslides_container">
+            <ul class="slider">
+                <li><img src="img/bildereinrahmungen/DSC_2741.jpg" alt=""></li>
+                <li><img src="img/bildereinrahmungen/DSCF4651.jpg"></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+
+        <p>
+            Der richtige Rahmen unterstreicht den Wert und den Charakter eines Bildes. Ich bin sicher, für jedes
+            Ihrer Bilder einen passenden Rahmen zu finden. Kommen Sie vorbei und lassen Sie sich überraschen,
+            wie viele Möglichkeiten es heute gibt!
+        </p>
+
+        <ul class="bulletlist">
+            <li>kompetente Beratung</li>
+            <li>große Leistenauswahl</li>
+            <li>konservierende Einrahmung</li>
+            <li>Museumsgläser</li>
+            <li>Sockel nach Maß</li>
+            <li>Spiegel nach Maß</li>
+            <li>Bilder</li>
+            <li>Kunstausstellungen</li>
+            <li>Aufhängesysteme</li>
+            <li>Passe Partouts</li>
+        </ul>
+    </div>
+</div>
+
+
+<div class="tab-pane" id="schmuck">
+    <div class="col-md-7">
+        <div class="rslides_container">
+            <ul class="slider">
+                <li><img src="img/schmuck/_MG_6885.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_9918_klein.JPG" alt=""></li>
+                <li><img src="img/schmuck/IMG_9940_klein.JPG" alt=""></li>
+                <li><img src="img/schmuck/IMG_3562_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3666_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3795_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3740_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3753_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3633_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3747_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3571_b.jpg" alt=""></li>
+                <li><img src="img/schmuck/IMG_3438_b.jpg" alt=""></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="col-md-5">
+        <p>Ich fertige Unikatschmuck nach eigenen Entwürfen in
+            traditioneller Goldschmiedetechnik. Die verwendeten Materialien wie
+            Gold, Silber, Edelsteine und Perlen sind Garant für dauerhafte
+            Wertigkeit. Das Spektrum meiner Arbeiten reicht von streng bis
+            elegant. Damit die Freude an Ihrem Schmuck erhalten
+            bleibt, übernehme ich zudem Reparatur- und Pflegearbeiten.</p>
+                
+        <ul class="bulletlist">
+            <li>Trauringe</li>
+            <li>Ringe</li>
+            <li>Ketten</li>
+            <li>Broschen</li>
+            <li>Ohrschmuck</li>
+            <li>Armbänder</li>
+            <li>Anhänger</li>
+            <li>Manschettenknöpfe</li>
+        </ul>
+
+        <br>
+
+        <p>Geschäftsethik: Edelmetalle und Edelsteine kaufe ich
+            ausschließlich bei deutschen Unternehmen, die hohe Umwelt-und
+            Arbeitsstandards in den Förderländern garantieren.
+        </p>
+    </div>
+
+</div>
+
+<div class="tab-pane" id="lokales">
+
+    <div class="col-md-7" style="align: center">
+        <img src="img/schmuck/kirche.jpg" alt="Bild Anhänger">
+    </div>
+
+    <div class="col-md-5">
+        <p>Spendenaktion für den Kirchbauverein Witzhelden e.V. &quot;der Alte vom Berg&quot;.
+        </p>
+
+        <p>Mit dem Erwerb dieses handgefertigten Silberanhängers &quot;der Alte vom Berg&quot; können Sie bei der
+            Renovierung unseres Witzheldener Wahrzeichens helfen. Bisher konnte ich durch Ihre freundliche Unterstützung
+            schon über 2000.- € an den Kirchbauverein überweisen!
+            Herzlichen Dank dafür.
+        </p>
+
+        <p>Jedes Schmuckstück ist mit einer eigenen Nummer versehen und wird als Sticker oder Kettenanhänger exclusiv
+            für den Kirchbauverein gefertigt. Die Kosten belaufen sich auf 70.- € (incl. Verpackung, Zertifikat und
+            einer Spende von 20.- € für den Kirchbauverein).
+        </p>
+    </div>
+</div>
+
+<div class="tab-pane" id="ubermich">
+
+    <div class="col-md-7">
+        <img src="img/_MG_4885.jpg">
+    </div>
+
+    <div class="col-md-5">
+        <p>Melanie Ebbighausen, Diplom der Edelmetallgestaltung und
+            Bildhauerei an der Fachhochschule für Kunst + Design in Köln.
+            Meisterschülerin von Peter Skubic. Mehr als 30 Jahre Erfahrung in
+            der Schmuckgestaltung und Bildereinrahmung.</p>
+    </div>
+</div>
+
+
+<div class="tab-pane" id="netzwerk">
+
+    <div class="col-md-7">
+        <img src="img/_MG_4867.jpg">
+    </div>
+
+    <div class="col-md-5">
+
+        <p>
+            Ich arbeite mit folgenden Lieferanten zusammen, die alle nach höchsten Qualitätsstandards
+            zertifiziert sind:
+        </p>
+
+        <ul class="bulletlist">
+            <li><a href="http://www.spagl-fachhandel.de">spagl</a></li>
+            <li><a href="http://www.aicham-larsonjuhl.de">aicham-larsonjuhl</a></li>
+            <li><a href="http://www.nielsen-design.de">nielsen-design</a></li>
+            <li><a href="http://www.eurolijsten.be">www.eurolijsten.be</a></li>
+            <li><a href="http://www.mittermeier-rahmen.de">mittermeier-rahmen</a></li>
+            <li><a href="http://www.conzen.de/">F.G. Conzen</a></li>
+            <li><a href="http://www.allgemeine-gold.de/">Allgemeine Gold- und Silberscheideanstalt</a></li>
+            <li><a href="http://www.wieland-dental.de/">Wieland Dental Technik</a></li>
+        </ul>
+
+        <br>
+
+        <p>Künstler der Galerie</p>
+
+        <p>Folgende Künstlerinnen und Künstler arbeiten mit mir zusammen
+            und haben in meinen Geschäftsräumen ausgestellt:</p>
+
+
+        <ul class="bulletlist">
+            <li><a href="http://www.martina-duenwald.privat.t-online.de">Martina Dünwald</a></li>
+            <li><a href="http://www.christa-feuerberg.de">Christa Feuerberg</a></li>
+            <li>Melitta Reif</li>
+            <li>Ulla Schellin</li>
+            <li>Gottfried Schmitt</li>
+            <li><a href="http://www.susanne-waltermann.de">Susanne Waltermann</a></li>
+        </ul>
+
+    </div>
+</div>
+</div>
 </div>
 
 
@@ -296,6 +473,11 @@ Herzlichen Dank dafür.
     </div>
 </div>
 
+
+
+<div id="orderinfo">
+    Ich freue mich über Ihr Interesse an meinem Produkt.<br><br>Für eine Bestellung kontaktieren Sie mich bitte per Email <a href="mailto:info@rahmenundschmuck.de">info@rahmenundschmuck.de</a> oder zu meinen Geschäftszeiten per Telefon 02174 &ndash; 307&thinsp;02&thinsp;45.<br><br>
+</div>
 <div id="info">
     <h5>Rahmen + Schmuck</h5>
     Melanie Ebbighausen<br>
@@ -310,6 +492,8 @@ Herzlichen Dank dafür.
     <br>
     USt.-Id Nr. DE 258518354
 </div>
+
+
 
 
 <div class="row top-neg-buffer">

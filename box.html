@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <script src="js/bootstrap-select.min.js"></script>
+
+    <style>
+        .jewelrySelects {
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<form>
+
+    <div class="jewelrySelects" id="jewelrySelects"></div>
+
+    <button type="button" id="more" class="btn btn-primary">Mehr</button>
+    <button type="button" id="less" class="btn btn-warning">Letzten entfernen</button>
+
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-email">Email</span>
+        <input type="text" class="form-control" placeholder="Email" aria-describedby="addon-email" id="email">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-firstname">Vorname</span>
+        <input type="text" class="form-control" placeholder="Vorname" aria-describedby="addon-firstname"
+               id="firstname">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-lastname">Nachname</span>
+        <input type="text" class="form-control" placeholder="Nachname" aria-describedby="addon-lastname"
+               id="lastname">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-street">Straße</span>
+        <input type="text" class="form-control" placeholder="Straße" aria-describedby="addon-street" id="street">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-city">PLZ Stadt</span>
+        <input type="text" class="form-control" placeholder="PLZ Stadt" aria-describedby="addon-city" id="city">
+    </div>
+
+    <div class="input-group">
+        <span class="input-group-addon" id="addon-phone">Telefonnummer</span>
+        <input type="text" class="form-control" placeholder="Telefonnummer" aria-describedby="addon-phone"
+               id="phone">
+    </div>
+
+    <a type="button" id="order" class="btn btn-success">Bestellen</a><div id="price"></div>
+
+</form>
+
+<script>
+    var numJewelries = 0;
+    var price = 98.0;
+    var shipping = 7.0;
+    var jewelry;
+
+    function getNewJewelry() {
+        numJewelries++;
+        var newJewelry = '<div id="jewelry"' + numJewelries + '">' +
+                '<select class="typeselect" id="typeselect' + numJewelries + '" name="typeselect' + numJewelries + '">' +
+                '        <option value="kette">Kette</option>' +
+                '<option value="armband">Armband</option>' +
+                '</select>' +
+                '<select id="cochonnettselect' + numJewelries + '" >' +
+                '       <option value="blau">blau - Achat</option>' +
+                '<option value="schwarz">schwarz - Achat</option>' +
+                '<option value="rot">rot - Achat</option>' +
+                '<option value="grün">grün - Achat</option>' +
+                '<option value="weiß">weiß - Süßwasserperle</option>' +
+                '<option value="gelb">gelb - Tigerauge</option>' +
+                '</select></div>';
+
+        return newJewelry;
+    }
+
+    function getMailBody() {
+        var body = 'Boulschmuck - Bestellung\n';
+
+        body += 'Vorname: ' + $('#firstname').val() + '\n';
+        body += 'Nachname: ' + $('#lastname').val() + '\n';
+        body += 'Email: ' + $('#email').val() + '\n';
+        body += 'Straße: ' + $('#street').val() + '\n';
+        body += 'PLZ/Stadt: ' + $('#city').val() + '\n';
+        body += 'Telefonnummer: ' + $('#phone').val() + '\n\n\n';
+
+        body += "Meine Bestellung(en)\n";
+
+        for (i=1; i <= numJewelries; i++)
+        {
+            var typeSelectId = "typeselect" + i;
+            var cochonnettSelectId = "cochonnettselect" + i;
+            var sizeSelectId = "sizeselect" + i;
+
+            body += "1 x " + $('#' + typeSelectId).val() + ' mit ';
+            body += $('#' + cochonnettSelectId).val();
+            var sizeSelect = $('#' + sizeSelectId);
+
+            if (sizeSelect) {
+                body += " und Armband in Größe " + sizeSelect.val() + "\n";
+            }
+
+            body += "\n";
+        }
+        return body;
+    }
+
+    $("#order").on("click", function () {
+        $(this).attr('href', 'mailto:j@vxr.de?subject=Bestellung&body=' + encodeURIComponent(getMailBody()));
+    });
+
+    function addNewJewelryRow() {
+        $('#jewelrySelects').append(getNewJewelry());
+        $("#typeselect" + numJewelries).on("change", typeSelectChange);
+        var total = shipping + numJewelries * price;
+        $('#price').html('für ' + total);
+    }
+
+    $("#more").on("click", addNewJewelryRow);
+
+    $("#less").on("click", function () {
+
+        if (numJewelries == 1) {
+            alert('Das letzte Element kann nicht entfernt werden, wollen sie die Bestellung abbrechen?');
+            return;
+        }
+
+        var lastElementId = '#jewelry' + (numJewelries--);
+        $(lastElementId).remove();
+    });
+
+    function getNewSizeSelect(sizeSelectId) {
+        return "<select id='" + sizeSelectId + "'>" +
+                "       <option value='klein'>klein - 18 cm</option>" +
+                "       <option value='mittel'>mittel - 21 cm</option>" +
+                "       <option value='groß'>groß - 23 cm</option>" +
+                "</select>";
+    }
+
+    function typeSelectChange() {
+        var sizeSelectId = "sizeselect" + $(this).attr("name").slice(-1);
+
+        if ($(this).val() == "armband") {
+            var sizeSelect = getNewSizeSelect(sizeSelectId);
+            $(this).parent().append(sizeSelect);
+        } else {
+            $("#" + sizeSelectId).remove();
+        }
+    }
+
+    $(document).ready(function() {
+        addNewJewelryRow();
+    });
+
+</script>
+
+</body>
+
+
+</html>
